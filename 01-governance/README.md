@@ -1,4 +1,4 @@
-# Governança no Azure – Custom RBAC Role
+# Custom RBAC Role
 
 Este laboratório simula um cenário de governança em que um operador de suporte precisa gerenciar máquinas virtuais no Azure com permissões específicas.
 
@@ -17,7 +17,7 @@ Esse usuário seria usado para validar o comportamento da role personalizada.
 
 ## 📄 2. Definição da Role Personalizada
 
-Foi criado um arquivo `custom_rbac.json.json` com o seguinte conteúdo:
+Foi criado um arquivo `custom_rbac.json` com o seguinte conteúdo:
 
 ```json
 {
@@ -34,7 +34,7 @@ Foi criado um arquivo `custom_rbac.json.json` com o seguinte conteúdo:
   ],
   "NotActions": [],
   "AssignableScopes": [
-    "/subscriptions/SEU-ID-AQUI",
+    "/subscriptions/MEU-ID",
     "/providers/Microsoft.Management/managementGroups/pedrolab-003"
   ]
 }
